@@ -4,8 +4,8 @@ body {
     color: #fff;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Изменено на flex-start, чтобы контейнер не центрировался по вертикали */
-    min-height: 100vh; /* Минимальная высота, чтобы body занимал весь экран */
+    align-items: flex-start;
+    min-height: 100vh;
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
@@ -17,10 +17,10 @@ body {
     border-radius: 10px;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    max-width: 800px; /* Увеличим максимальную ширину */
+    max-width: 800px;
     width: 100%;
     box-sizing: border-box;
-    overflow-x: auto; /* Добавляем горизонтальную прокрутку, если таблица слишком широкая */
+    overflow-x: auto;
 }
 
 .task {
