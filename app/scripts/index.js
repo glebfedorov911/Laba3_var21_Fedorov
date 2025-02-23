@@ -27,13 +27,7 @@ options.addEventListener("change", function(e) {
 })
 
 buttonConvert.addEventListener("click", function(e) {
-    try {
-        convert(options, inputValue);
-    }
-    catch (e) {
-        alert(e);
-    }
-    setInputValueAndPostResultEmpty();
+    saveInTable();
 })
 
 function updateInRealTime() {
@@ -42,6 +36,16 @@ function updateInRealTime() {
     } catch (e) {
         setInputValueAndPostResultEmpty();
     }
+}
+
+function saveInTable() {
+    try {
+        convert(options, inputValue);
+    }
+    catch (e) {
+        alert(e);
+    }
+    setInputValueAndPostResultEmpty();
 }
 
 function convert(options, inputValue) {
