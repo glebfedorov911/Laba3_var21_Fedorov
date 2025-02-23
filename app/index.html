@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+  <link rel="stylesheet" href="styles/index.css">
+  <title>Конвертер космических расстояний</title>
+</head>
+<body>
+  <div class="container">
+      <div class="task">
+        Конвертер космических расстояний: световые года ↔ километры.
+        Сконвертированные значения добавляются в таблицу ниже.
+      </div>
+    <input type="text" class="input-value" id="input-value"
+           placeholder="Введите значение">
+    <select class="select-type" id="select-type">
+      <option value="light-year-to-kilometer">Световые года
+        в километры</option>
+      <option value="kilometer-to-light-year">Километры
+        в световые года</option>
+    </select>
+    <div id="post-result" class="post-result"></div>
+    <input class="button" id="button" type="button"
+           value="Конвертировать">
+    <div class="scroll">
+    <table class="results" id="results">
+      <tr>
+        <th>Ввод</th>
+        <th>Вывод</th>
+        <th>Из</th>
+        <th>В</th>
+      </tr>
+    </table>
+  </div>
+  <script src="scripts/index.js"></script>
+</body>
+</html>

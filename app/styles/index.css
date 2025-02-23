@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Изменено на flex-start, чтобы контейнер не центрировался по вертикали */
+    min-height: 100vh; /* Минимальная высота, чтобы body занимал весь экран */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 800px; /* Увеличим максимальную ширину */
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto; /* Добавляем горизонтальную прокрутку, если таблица слишком широкая */
+}
+
+.task {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-value, .select-type, .button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-value {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+.select-type {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+.button {
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #45a049;
+}
+
+.post-result {
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.results {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.results th, .results td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.results th {
+    background: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+}
+
+.results td {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.scroll {
+    overflow-x: auto;
+}
