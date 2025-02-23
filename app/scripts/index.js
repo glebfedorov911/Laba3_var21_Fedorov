@@ -19,19 +19,11 @@ let postResult = document.querySelector("#post-result");
 let history = new Object();
 
 inputValue.addEventListener("input", function(e) {
-    try {
-        postResult.textContent = convertTo(inputValue, options.value);
-    } catch (e) {
-        setInputValueAndPostResultEmpty();
-    }
+    updateInRealTime();
 })
 
 options.addEventListener("change", function(e) {
-    try {
-            postResult.textContent = convertTo(inputValue, options.value);
-    } catch (e) {
-        setInputValueAndPostResultEmpty();
-    }
+    updateInRealTime();
 })
 
 buttonConvert.addEventListener("click", function(e) {
@@ -43,6 +35,14 @@ buttonConvert.addEventListener("click", function(e) {
     }
     setInputValueAndPostResultEmpty();
 })
+
+function updateInRealTime() {
+    try {
+        postResult.textContent = convertTo(inputValue, options.value);
+    } catch (e) {
+        setInputValueAndPostResultEmpty();
+    }
+}
 
 function convert(options, inputValue) {
     if (options.value === LIGHT_YEAR_TO_KILOMETER) {
