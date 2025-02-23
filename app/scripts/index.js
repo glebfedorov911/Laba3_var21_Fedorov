@@ -26,6 +26,14 @@ inputValue.addEventListener("input", function(e) {
     }
 })
 
+options.addEventListener("change", function(e) {
+    try {
+            postResult.textContent = convertTo(inputValue, options.value);
+    } catch (e) {
+        setInputValueAndPostResultEmpty();
+    }
+})
+
 buttonConvert.addEventListener("click", function(e) {
     try {
         convert(options, inputValue);
